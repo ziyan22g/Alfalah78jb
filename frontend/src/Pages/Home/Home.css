@@ -1,0 +1,420 @@
+/* :root {
+  --primary: #15803D;
+  --primary-hover: #166534;
+  --accent: #D97706;
+  --accent-hover: #B45309;
+  --bg-page: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
+  --border-color: #E2E8F0;
+} */
+
+:root {
+  --primary: #15803D;
+  --primary-hover: #166534;
+  --accent: #D97706;
+  --accent-hover: #B45309;
+  --bg-page: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --text-dark: #0F172A;
+  --text-muted: #475569;
+  --border-color: #E2E8F0;
+}
+
+.home-page {
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  /* 1. Hero Section */
+  .hero {
+    background: linear-gradient(180deg, #F0FDF4 0%, var(--bg-page) 100%);
+    padding: 4.5rem 1.5rem 3.5rem;
+    text-align: center;
+
+    .hero-container {
+      max-width: 820px;
+      margin: 0 auto;
+
+      .badge {
+        display: inline-block;
+        background-color: #DCFCE7;
+        color: var(--primary);
+        font-size: 0.85rem;
+        font-weight: 700;
+        padding: 0.4rem 1.2rem;
+        border-radius: 50px;
+        margin-bottom: 1.2rem;
+        border: 1px solid #BBF7D0;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 800;
+        line-height: 1.25;
+        margin-bottom: 1.2rem;
+        color: var(--text-dark);
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      p {
+        font-size: 1.05rem;
+        color: var(--text-muted);
+        line-height: 1.65;
+        margin-bottom: 2rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  /* 2. Stats Bar */
+  .stats-bar {
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.8rem 1.5rem;
+
+    .stats-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      text-align: center;
+
+      .stat-item {
+        h3 {
+          font-size: 1.9rem;
+          font-weight: 800;
+          color: var(--primary);
+          margin-bottom: 0.25rem;
+        }
+
+        p {
+          font-size: 0.88rem;
+          color: var(--text-muted);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  /* 3. Section Titles & Cards */
+  .section {
+    padding: 4.5rem 1.5rem;
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+
+      .section-subtitle {
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .section-title {
+        font-size: 2.1rem;
+        font-weight: 800;
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+
+        span {
+          color: var(--primary);
+        }
+      }
+
+      p {
+        color: var(--text-muted);
+        font-size: 1rem;
+      }
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.8rem;
+
+      .card {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 2rem 1.8rem;
+        border-radius: 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+          border-color: #CBD5E1;
+        }
+
+        /* Top Header inside Card (Icon + Status Tag) */
+        .card-top {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1.2rem;
+
+          .card-icon {
+            font-size: 2.2rem;
+          }
+
+          .status-tag {
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.25rem 0.65rem;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+
+            &.status-active {
+              background-color: #DCFCE7;
+              color: var(--primary);
+              border: 1px solid #BBF7D0;
+            }
+
+            &.status-pending {
+              background-color: #FEF3C7;
+              color: #B45309;
+              border: 1px solid #FDE68A;
+            }
+          }
+        }
+
+        h3 {
+          font-size: 1.25rem;
+          margin-bottom: 0.75rem;
+          color: var(--text-dark);
+          font-weight: 700;
+        }
+
+        p {
+          color: var(--text-muted);
+          font-size: 0.93rem;
+          line-height: 1.55;
+          margin-bottom: 1.5rem;
+          flex-grow: 1;
+        }
+
+        .card-link {
+          text-decoration: none;
+          color: var(--primary);
+          font-weight: 700;
+          font-size: 0.9rem;
+          transition: color 0.2s;
+
+          &:hover {
+            color: var(--primary-hover);
+          }
+        }
+
+        .pending-text {
+          font-size: 0.85rem;
+          color: #94A3B8;
+          font-weight: 600;
+          font-style: italic;
+        }
+
+        /* Pending Card Dim Look */
+        &.card-pending {
+          background-color: #FAFAFA;
+          border-style: dashed;
+        }
+      }
+    }
+  }
+
+  /* 4. Mission Teaser */
+  .mission-section {
+    background-color: #F1F5F9;
+    padding: 4rem 1.5rem;
+
+    .mission-text {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+
+      .section-subtitle {
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        font-size: 1.85rem;
+        margin: 0.5rem 0 1rem;
+        font-weight: 800;
+      }
+
+      p {
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 1.8rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* 5. CTA Banner */
+  .cta-banner {
+    padding: 3rem 1.5rem 5rem;
+
+    .cta-content {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      padding: 3.5rem 2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px -5px rgba(21, 128, 61, 0.3);
+
+      h2 {
+        font-size: 1.9rem;
+        font-weight: 800;
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        opacity: 0.92;
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.6;
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  /* Common Buttons */
+  .btn {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.92rem;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &.btn-primary {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      border: 1px solid var(--primary);
+
+      &:hover {
+        background-color: var(--primary-hover);
+      }
+    }
+
+    &.btn-secondary {
+      background-color: #FFFFFF;
+      color: var(--text-dark);
+      border: 1.5px solid #CBD5E1;
+
+      &:hover {
+        border-color: var(--text-dark);
+      }
+    }
+
+    &.btn-outline-dark {
+      background-color: transparent;
+      color: var(--text-dark);
+      border: 1.5px solid var(--text-dark);
+
+      &:hover {
+        background-color: var(--text-dark);
+        color: #FFFFFF;
+      }
+    }
+
+    &.btn-accent {
+      background-color: var(--accent);
+      color: #FFFFFF;
+      border: 1px solid var(--accent);
+
+      &:hover {
+        background-color: var(--accent-hover);
+      }
+    }
+
+    &.btn-white {
+      background-color: #FFFFFF;
+      color: var(--primary);
+      border: 1px solid #FFFFFF;
+
+      &:hover {
+        background-color: #F8FAFC;
+      }
+    }
+  }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .home-page {
+    .hero {
+      padding: 3.5rem 1rem 2.5rem;
+
+      h1 {
+        font-size: 1.85rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+
+    .section {
+      padding: 3rem 1rem;
+
+      .section-header {
+        .section-title {
+          font-size: 1.6rem;
+        }
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cta-banner {
+      padding: 2rem 1rem 3.5rem;
+
+      .cta-content {
+        padding: 2.2rem 1.2rem;
+
+        h2 {
+          font-size: 1.45rem;
+        }
+      }
+    }
+  }
+}
