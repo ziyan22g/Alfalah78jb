@@ -1,0 +1,187 @@
+.facilities-hero {
+  position: relative;
+  width: 100%;
+  padding: 5rem 1.5rem 3.5rem;
+  background: radial-gradient(circle at top center, #f4faf6 0%, #ffffff 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+
+  .hero-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Badge */
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 1rem;
+    background: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 9999px;
+    margin-bottom: 1.5rem;
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #2e7d32;
+    }
+
+    .badge-text {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #2e7d32;
+      letter-spacing: 0.3px;
+    }
+  }
+
+  /* Main Title */
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    font-weight: 800;
+    line-height: 1.25;
+    color: #1a202c;
+    margin-bottom: 1.25rem;
+
+    span {
+      color: #1b5e20;
+      position: relative;
+      display: inline-block;
+    }
+  }
+
+  /* Description */
+  .hero-description {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+    color: #4a5568;
+    max-width: 680px;
+    margin-bottom: 2rem;
+  }
+
+  /* CTA Buttons */
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.85rem 1.6rem;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      .btn-icon {
+        font-size: 1rem;
+      }
+
+      &.btn-primary {
+        background-color: #1b5e20;
+        color: #ffffff;
+        box-shadow: 0 4px 14px rgba(27, 94, 32, 0.25);
+
+        &:hover {
+          background-color: #144617;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(27, 94, 32, 0.35);
+        }
+      }
+
+      &.btn-secondary {
+        background-color: #ffffff;
+        color: #2d3748;
+        border-color: #e2e8f0;
+
+        &:hover {
+          background-color: #f8fafc;
+          border-color: #cbd5e1;
+          color: #1b5e20;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  /* Stats Strip */
+  .hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.25rem 2rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.04);
+
+    .stat-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.25rem;
+
+      .stat-value {
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: #1b5e20;
+      }
+
+      .stat-label {
+        font-size: 0.825rem;
+        font-weight: 500;
+        color: #64748b;
+      }
+    }
+
+    .stat-divider {
+      width: 1px;
+      height: 35px;
+      background-color: #e2e8f0;
+    }
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .facilities-hero {
+    padding: 3.5rem 1rem 2.5rem;
+
+    .hero-actions {
+      flex-direction: column;
+      width: 100%;
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    .hero-stats {
+      gap: 1.25rem;
+      width: 100%;
+
+      .stat-divider {
+        display: none;
+      }
+    }
+  }
+}
