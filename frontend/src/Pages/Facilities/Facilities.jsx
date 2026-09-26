@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Facilities.css'
 import { FacilitiesHero } from './FacilitiesHore/FacilitiesHero'
 import { FacilitiesCard } from './FacilitiesCard/FacilitiesCard'
 import { FacilitiesApply } from './FacilitiesApply/FacilitiesApply'
+import { useLocation } from 'react-router-dom'
 
 const Facilities = () => {
+
+    const { hash } = useLocation();
+
+    useEffect(() => {
+        if (hash) {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: 'smooth' })
+                }, 100);
+            }
+        } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }, [location])
 
     const scrollToCards = () => {
         document.getElementById('facilities-list')?.scrollIntoView({ behavior: 'smooth' });
