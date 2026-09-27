@@ -11,10 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+
+      # Step 1: Frontend folder ke andar npm install aur build chalayein
+      - name: Install dependencies and build
+        working-directory: frontend
+        run: npm ci && npm run build
+
+      # Step 2: Firebase Hosting par deploy karein
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALFALAH78JB }}
           channelId: live
           projectId: alfalah78jb
+          entryPoint: frontend
