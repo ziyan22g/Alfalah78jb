@@ -101,7 +101,7 @@ const Footer = () => {
             <li><Link to="/about">Hamara Ta'aruf</Link></li>
             <li><Link to="/facilities">Gaon Ki Sahooliyat</Link></li>
             <li><Link to="/works">Falahi Khidmaat</Link></li>
-            <li><Link to="/help-request">Madad Ki Darkhwast</Link></li>
+            <li><Link to="/facilities#howToApply">Madad Ki Darkhwast</Link></li>
           </ul>
         </div>
 
