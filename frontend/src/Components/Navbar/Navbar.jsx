@@ -68,7 +68,7 @@ const Navbar = () => {
 
           {/* Action Buttons */}
           <div className="nav-actions">
-            <Link to="/help-request" className="btn btn-outline">
+            <Link to="/facilities#howToApply" className="btn btn-outline">
               Madad Chahiye?
             </Link>
             {/* WhatsApp external link hai isliye yeh a tag hi rahega */}
