@@ -58,7 +58,7 @@ const Sidebar = ({ closeMenu }) => {
 
                     {/* Action Buttons */}
                     <div className="nav-actions">
-                        <Link to="/help-request" onClick={closeMenu} className="btn btn-outline">
+                        <Link to="/facilities#howToApply" onClick={closeMenu} className="btn btn-outline">
                             Madad Chahiye?
                         </Link>
                         {/* WhatsApp external link hai isliye yeh a tag hi rahega */}
