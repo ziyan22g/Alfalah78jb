@@ -13,6 +13,7 @@
 import React from 'react';
 import { FaFileAlt, FaUserCheck, FaHandsHelping, FaWhatsapp } from 'react-icons/fa';
 import './FacilitiesApply.css';
+import { WHATSAPP_NUMBER } from '../../../Config/Config';
 
 const stepsData = [
     {
@@ -79,7 +80,7 @@ const FacilitiesApply  = () => {
                         <p>Hamaari team se bila-jhijhak direct rabta karein. Maloomat mukammal tor par safe aur raaz mein rakhi jati hain.</p>
                     </div>
                     <a
-                        href="https://wa.me/923260781878"
+                        href={`https://wa.me/${WHATSAPP_NUMBER}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-whatsapp"
