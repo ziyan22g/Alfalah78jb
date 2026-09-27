@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import { WHATSAPP_NUMBER } from '../../Config/Config'
 
 const About = () => {
     return (
@@ -186,7 +187,7 @@ const About = () => {
                             <h3>Kiya aap gaon ki khidmat mein hissa lena chahte hain?</h3>
                             <p>Apna waqt, mashwara ya falahi kamo mein tawun pesh karne ke liye committee se rabta karein.</p>
                             <a
-                                href="https://wa.me/923260781878"
+                                href={`https://wa.me/${WHATSAPP_NUMBER}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn btn-primary"
