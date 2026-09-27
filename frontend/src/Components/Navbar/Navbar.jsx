@@ -3,6 +3,7 @@ import './Navbar.css'
 import { Sidebar } from '../Sidebar/Sidebar';
 import { useEffect, useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi'; // Hamburger Icon
+import { WHATSAPP_NUMBER } from '../../Config/Config';
 
 const Navbar = () => {
 
@@ -73,7 +74,7 @@ const Navbar = () => {
             </Link>
             {/* WhatsApp external link hai isliye yeh a tag hi rahega */}
             <a
-              href="https://wa.me/923260781878"
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary"
