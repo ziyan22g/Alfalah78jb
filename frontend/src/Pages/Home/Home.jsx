@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import { WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../../Config/Config';
 
 const Home = () => {
   return (
@@ -63,7 +64,7 @@ const Home = () => {
             </div>
             <h3>Basic Health Unit (Clinic)</h3>
             <p>
-              Maryam Nawaz Health Initiative: OPD doctor subah 8 se dopahar 2 tak dastiyab hain. 
+              Maryam Nawaz Health Initiative: OPD doctor subah 8 se dopahar 2 tak dastiyab hain.
               Normal delivery aur basic emergency procedures 24/7 dastiyab hain.
             </p>
             <Link to="/facilities" className="card-link">Clinic Ki Tafseelat →</Link>
@@ -77,7 +78,7 @@ const Home = () => {
             </div>
             <h3>Janazagah & Qabar Khidmat</h3>
             <p>
-              Gaon ke baasiyon ke liye qabar ki khudaai aur intezam bilkul muft (Fi Sabilillah) hai. 
+              Gaon ke baasiyon ke liye qabar ki khudaai aur intezam bilkul muft (Fi Sabilillah) hai.
               Kafan filhal munasib hasb-e-isteta'at kharche par milta hai.
             </p>
             <Link to="/facilities" className="card-link">Intezamat Dekhein →</Link>
@@ -91,7 +92,7 @@ const Home = () => {
             </div>
             <h3>Mustahiq Khandan Rashan</h3>
             <p>
-              Gaon ki bewa khawateen, yateem bachon aur safaid-posh zaroorat-mand khandanon 
+              Gaon ki bewa khawateen, yateem bachon aur safaid-posh zaroorat-mand khandanon
               ke liye khufia aur ba-waqar tareeqay se maahana zaroori rashan ka bandobast.
             </p>
             <Link to="/facilities" className="card-link">Madad Ka Tareeqa →</Link>
@@ -105,7 +106,7 @@ const Home = () => {
             </div>
             <h3>Taleemi Imdad (Schools)</h3>
             <p>
-              Gaon ke 2 Public Schools (Boys aur Girls alag) aur 2 Private Schools ke mustahiq 
+              Gaon ke 2 Public Schools (Boys aur Girls alag) aur 2 Private Schools ke mustahiq
               talba ke liye kitabein, bag, uniform aur fees mein tawun.
             </p>
             <Link to="/facilities" className="card-link">Taleemi Kifalat →</Link>
@@ -119,7 +120,7 @@ const Home = () => {
             </div>
             <h3>Solar Water Filtration Plant</h3>
             <p>
-              Chak 78 JB ke baasiyon ke liye 24 ghante saaf aur meetha peene ka paani muhayya 
+              Chak 78 JB ke baasiyon ke liye 24 ghante saaf aur meetha peene ka paani muhayya
               karne ka mansoba zair-e-amal hai, jald solar setup install kiya jayega.
             </p>
             <span className="pending-text">Kaam Jald Shuru Hoga</span>
@@ -133,7 +134,7 @@ const Home = () => {
             </div>
             <h3>Shadi Support (Dhee Rani)</h3>
             <p>
-              Ghareeb aur zaroorat-mand bachiyon ke nikah ke zaroori akhrajat aur bunyadi 
+              Ghareeb aur zaroorat-mand bachiyon ke nikah ke zaroori akhrajat aur bunyadi
               gharelu ashiya ki farahmi ke liye fund qayam karne ka irada hai.
             </p>
             <span className="pending-text">Committee Faisla Zair-e-Ghor</span>
@@ -148,8 +149,8 @@ const Home = () => {
             <span className="section-subtitle">Hamara Asal Hadaf</span>
             <h2>Siasi Ikhtilafat Se Pak, Ba-Izzat Khidmat</h2>
             <p>
-              Al-Falah Welfare Society kisi party ya zaati shohrat ke liye nahi, balki gaon ke aam insan 
-              ki sahoolat ke liye bani hai. Hamara agla hadaf committee ke zariye kafan aur mayyat ke 
+              Al-Falah Welfare Society kisi party ya zaati shohrat ke liye nahi, balki gaon ke aam insan
+              ki sahoolat ke liye bani hai. Hamara agla hadaf committee ke zariye kafan aur mayyat ke
               tamam ikhrajat ko 100% gaon ke har fard ke liye muft karna hai.
             </p>
             <Link to="/about" className="btn btn-outline-dark">Hamare Mansobajat Janein</Link>
@@ -162,17 +163,17 @@ const Home = () => {
         <div className="cta-content">
           <h2>Kiya aap ko kisi qisam ki madad darkaar hai?</h2>
           <p>
-            Bila jhijhak hamari team ko apna masla batayein, ya 78 JB Jawaddi ki falahi 
+            Bila jhijhak hamari team ko apna masla batayein, ya 78 JB Jawaddi ki falahi
             khidmaat mein hissa lene ke liye rabta karein.
           </p>
           <div className="cta-buttons">
-            <a 
-              href="https://wa.me/923260781878" 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
+              target="_blank"
+              rel="noreferrer"
               className="btn btn-accent"
             >
-              WhatsApp Rabta (+92 326 0781878)
+              WhatsApp Rabta ({WHATSAPP_DISPLAY})
             </a>
             <Link to="/contact" className="btn btn-white">Online Form Bharein</Link>
           </div>
