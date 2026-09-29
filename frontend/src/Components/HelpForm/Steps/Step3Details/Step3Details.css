@@ -1,0 +1,15 @@
+.btn-submit {
+  background-color: #047857;
+  padding: 0.85rem 1.8rem;
+  font-weight: 700;
+}
+
+.btn-submit:disabled,
+.btn-back:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+textarea {
+  resize: vertical;
+}
