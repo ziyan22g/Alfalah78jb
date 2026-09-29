@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { FaHandsHelping, FaArrowDown, FaHeart } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './FacilitiesHero.css';
 
 const FacilitiesHero = ({ onExploreClick, onApplyClick }) => {
@@ -27,14 +28,13 @@ const FacilitiesHero = ({ onExploreClick, onApplyClick }) => {
 
                 {/* CTA Action Buttons */}
                 <div className="hero-actions">
-                    <button
-                        type="button"
+                    <Link
+                        to="/help-form"
                         className="btn btn-primary"
-                        onClick={onApplyClick}
                     >
                         <FaHandsHelping className="btn-icon" />
                         <span>Madad Ke Liye Darkhwast</span>
-                    </button>
+                    </Link>
 
                     <button
                         type="button"
