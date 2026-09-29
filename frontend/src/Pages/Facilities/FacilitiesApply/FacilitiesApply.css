@@ -112,6 +112,27 @@
         }
       }
     }
+
+    /* it's apply when the condition is true otherwise it ignore  */
+    .clickable-card {
+      cursor: pointer;
+      border: 1.5px solid #bbf7d0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        border-color: #15803d;
+        box-shadow: 0 10px 25px rgba(21, 128, 61, 0.12);
+      }
+    }
+
+    .click-action-hint {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #15803d;
+    }
   }
 
   /* Help Banner */
