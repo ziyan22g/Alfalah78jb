@@ -1,6 +1,6 @@
 import React from 'react'
-import './About.css'
 import { WHATSAPP_NUMBER } from '../../Config/Config'
+import './About.css'
 
 const About = () => {
     return (
@@ -105,7 +105,6 @@ const About = () => {
                     </div>
                 </section>
 
-                {/* Agla hissa: Hamari Team, Core Values aur Committee Rules aayenge */}
                 {/* 4. Hamare Bunyadi Usool (Core Principles & Transparency) */}
                 <section className="values-section container">
                     <div className="section-intro text-center">
