@@ -204,23 +204,7 @@
   }
 }
 
-/* @media (max-width : 920px) {
-  .navbar {
-    .navbar-container {
-      .nav-menu {
 
-        .nav-links,
-        .nav-actions {
-          display: none;
-        }
-
-        .menu-btn {
-          display: block;
-        }
-      }
-    }
-  }
-} */
 
 /* ===================================================
    1. Laptop / Mid Desktop (Max-Width: 1180px)
@@ -341,6 +325,20 @@
 
         .menu-btn {
           display: block;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width : 420px){
+  .navbar{
+    .navbar-container{
+      .nav-menu{
+        .menu-btn{
+          .btn{
+            padding: 4px 8px;
+          }
         }
       }
     }
