@@ -1,0 +1,9 @@
+{
+  "appId": "com.alfalah78jb.app",
+  "appName": "Al-Falah Welfare",
+  "webDir": "dist",
+  "server": {
+    "url": "https://alfalah78jb.web.app",
+    "cleartext": true
+  }
+}
