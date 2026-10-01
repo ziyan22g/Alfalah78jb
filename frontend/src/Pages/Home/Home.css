@@ -17,13 +17,13 @@
   .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 24px;
   }
 
   /* 1. Hero Section */
   .hero {
     background: linear-gradient(180deg, #F0FDF4 0%, var(--bg-page) 100%);
-    padding: 4.5rem 1.5rem 3.5rem;
+    padding: 72px 24px 56px;
     text-align: center;
 
     .hero-container {
@@ -34,9 +34,9 @@
         display: inline-block;
         background-color: #DCFCE7;
         color: var(--primary);
-        font-size: 0.85rem;
+        font-size: 14px;
         font-weight: 700;
-        padding: 0.4rem 1.2rem;
+        padding: 6px 19px;
         border-radius: 50px;
         margin-bottom: 19px;
         border: 1px solid #BBF7D0;
@@ -46,7 +46,7 @@
         font-size: 40px;
         font-weight: 800;
         line-height: 1.25;
-        margin-bottom: 1.2rem;
+        margin-bottom: 19px;
         color: var(--text-dark);
 
         span {
@@ -55,16 +55,16 @@
       }
 
       p {
-        font-size: 1.05rem;
+        font-size: 17px;
         color: var(--text-muted);
         line-height: 1.65;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
       }
 
       .hero-actions {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 16px;
         flex-wrap: wrap;
       }
     }
@@ -75,26 +75,26 @@
     background-color: #FFFFFF;
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
-    padding: 1.8rem 1.5rem;
+    padding: 29px 24px;
 
     .stats-container {
       max-width: 1100px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
+      gap: 24px;
       text-align: center;
 
       .stat-item {
         h3 {
-          font-size: 1.9rem;
+          font-size: 30px;
           font-weight: 800;
           color: var(--primary);
-          margin-bottom: 0.25rem;
+          margin-bottom: 4px;
         }
 
         p {
-          font-size: 0.88rem;
+          font-size: 14px;
           color: var(--text-muted);
           font-weight: 600;
         }
@@ -104,25 +104,25 @@
 
   /* 3. Section Titles & Cards */
   .section {
-    padding: 4.5rem 1.5rem;
+    padding: 72px 24px;
 
     .section-header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-bottom: 48px;
 
       .section-subtitle {
         color: var(--accent);
         font-weight: 700;
-        font-size: 0.85rem;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
 
       .section-title {
-        font-size: 2.1rem;
+        font-size: 34px;
         font-weight: 800;
-        margin-top: 0.3rem;
-        margin-bottom: 0.5rem;
+        margin-top: 5px;
+        margin-bottom: 8px;
 
         span {
           color: var(--primary);
@@ -131,7 +131,7 @@
 
       p {
         color: var(--text-muted);
-        font-size: 1rem;
+        font-size: 16px;
       }
     }
 
@@ -139,12 +139,12 @@
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.8rem;
+      gap: 29px;
 
       .card {
         background-color: var(--bg-card);
         border: 1px solid var(--border-color);
-        padding: 2rem 1.8rem;
+        padding: 32px 29px;
         border-radius: 12px;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
         display: flex;
@@ -161,16 +161,16 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-bottom: 1.2rem;
+          margin-bottom: 19px;
 
           .card-icon {
-            font-size: 2.2rem;
+            font-size: 35px;
           }
 
           .status-tag {
-            font-size: 0.75rem;
+            font-size: 12px;
             font-weight: 700;
-            padding: 0.25rem 0.65rem;
+            padding: 4px 10px;
             border-radius: 20px;
             letter-spacing: 0.3px;
 
@@ -189,17 +189,17 @@
         }
 
         h3 {
-          font-size: 1.25rem;
-          margin-bottom: 0.75rem;
+          font-size: 20px;
+          margin-bottom: 12px;
           color: var(--text-dark);
           font-weight: 700;
         }
 
         p {
           color: var(--text-muted);
-          font-size: 0.93rem;
+          font-size: 15px;
           line-height: 1.55;
-          margin-bottom: 1.5rem;
+          margin-bottom: 24px;
           flex-grow: 1;
         }
 
@@ -207,7 +207,7 @@
           text-decoration: none;
           color: var(--primary);
           font-weight: 700;
-          font-size: 0.9rem;
+          font-size: 14px;
           transition: color 0.2s;
 
           &:hover {
@@ -216,7 +216,7 @@
         }
 
         .pending-text {
-          font-size: 0.85rem;
+          font-size: 14px;
           color: #94A3B8;
           font-weight: 600;
           font-style: italic;
@@ -234,7 +234,7 @@
   /* 4. Mission Teaser */
   .mission-section {
     background-color: #F1F5F9;
-    padding: 4rem 1.5rem;
+    padding: 64px 24px;
 
     .mission-text {
       max-width: 760px;
@@ -244,47 +244,47 @@
       .section-subtitle {
         color: var(--accent);
         font-weight: 700;
-        font-size: 0.85rem;
+        font-size: 14px;
         text-transform: uppercase;
       }
 
       h2 {
-        font-size: 1.85rem;
-        margin: 0.5rem 0 1rem;
+        font-size: 30px;
+        margin: 8px 0 16px;
         font-weight: 800;
       }
 
       p {
         color: var(--text-muted);
         line-height: 1.7;
-        margin-bottom: 1.8rem;
-        font-size: 1rem;
+        margin-bottom: 29px;
+        font-size: 16px;
       }
     }
   }
 
   /* 5. CTA Banner */
   .cta-banner {
-    padding: 3rem 1.5rem 5rem;
+    padding: 48px 24px 80px;
 
     .cta-content {
       background-color: var(--primary);
       color: #FFFFFF;
-      padding: 3.5rem 2rem;
+      padding: 56px 32px;
       border-radius: 16px;
       text-align: center;
       box-shadow: 0 10px 25px -5px rgba(21, 128, 61, 0.3);
 
       h2 {
-        font-size: 1.9rem;
+        font-size: 30px;
         font-weight: 800;
-        margin-bottom: 0.8rem;
+        margin-bottom: 13px;
       }
 
       p {
         opacity: 0.92;
-        font-size: 1.05rem;
-        margin-bottom: 2rem;
+        font-size: 17px;
+        margin-bottom: 32px;
         max-width: 650px;
         margin-left: auto;
         margin-right: auto;
@@ -294,7 +294,7 @@
       .cta-buttons {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 16px;
         flex-wrap: wrap;
       }
     }
@@ -303,10 +303,10 @@
   /* Common Buttons */
   .btn {
     text-decoration: none;
-    padding: 0.7rem 1.5rem;
+    padding: 11px 24px;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 0.92rem;
+    font-size: 15px;
     display: inline-block;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -317,16 +317,18 @@
       border: 1px solid var(--primary);
 
       &:hover {
+        transform: translateY(-2px);
         background-color: var(--primary-hover);
       }
     }
-
+    
     &.btn-secondary {
       background-color: #FFFFFF;
       color: var(--text-dark);
       border: 1.5px solid #CBD5E1;
-
+      
       &:hover {
+        transform: translateY(-2px);
         border-color: var(--text-dark);
       }
     }
@@ -368,23 +370,23 @@
 @media (max-width: 768px) {
   .home-page {
     .hero {
-      padding: 3.5rem 1rem 2.5rem;
+      padding: 56px 16px 40px;
 
       h1 {
-        font-size: 1.85rem;
+        font-size: 30px;
       }
 
       p {
-        font-size: 0.95rem;
+        font-size: 15px;
       }
     }
 
     .section {
-      padding: 3rem 1rem;
+      padding: 48px 16px;
 
       .section-header {
         .section-title {
-          font-size: 1.6rem;
+          font-size: 26px;
         }
       }
 
@@ -394,35 +396,53 @@
     }
 
     .cta-banner {
-      padding: 2rem 1rem 3.5rem;
+      padding: 32px 16px 56px;
 
       .cta-content {
-        padding: 2.2rem 1.2rem;
+        padding: 35px 19px;
 
         h2 {
-          font-size: 1.45rem;
+          font-size: 23px;
         }
       }
     }
   }
 }
 
-
-@media (max-width : 420px){
-  .home-page{
-    .hero{
+@media (max-width: 420px) {
+  .home-page {
+    .hero {
       padding: 30px 8px 30px;
 
-      .hero-container{
-        .badge{
+      .hero-container {
+        .badge {
           padding: 5px 15px;
           border-radius: 5px;
           margin-bottom: 10px;
         }
-        h1{
-          font-size:25px ;
+
+        h1 {
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 15px;
+          text-align: justify;
+          padding: 0 10px;
+          line-height: 1.58;
+        }
+
+        .hero-actions {
+          gap: 13px;
         }
       }
     }
+
+    .btn {
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 10px;
+    }
   }
+
 }
