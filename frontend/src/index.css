@@ -1,5 +1,43 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* 1. Global Reset & Touch Highlight Removal */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* Mobile WebView tap shadow/box disable */
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-touch-callout: none;
+  
+  /* Text drag/selection disable */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* 2. Links, Buttons aur Clickable elements se focus/active shadow khatam */
+a,
+button,
+div[role="button"],
+[role="button"] {
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* 3. Input fields mein typing aur text selection allow rakhne ke liye */
+input,
+textarea {
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
+  outline: none;
 }
